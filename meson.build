@@ -88,6 +88,8 @@ sources = [
         'src/runner/parse-mountinfo.c',
 ]
 
+flatpak = subproject('flatpak')
+
 floppak = executable(
         'floppak',
         sources,

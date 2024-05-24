@@ -1,0 +1,7 @@
+[submodule "flatpak"]
+	path = subprojects/flatpak
+	url = https://github.com/flatpak/flatpak
+
+[submodule "variant-schema-compiler"]
+	path = subprojects/variant-schema-compiler
+	url = https://gitlab.gnome.org/alexl/variant-schema-compiler.git
