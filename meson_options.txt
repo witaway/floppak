@@ -1,0 +1,15 @@
+option(
+    'installdir',
+    type : 'string',
+    description : 'install floppak in this directory [default: bindir, or libexecdir in subprojects]',
+)
+option(
+    'build_rpath',
+    type : 'string',
+    description : 'set a RUNPATH or RPATH on the floppak executable',
+)
+option(
+    'install_rpath',
+    type : 'string',
+    description : 'set a RUNPATH or RPATH on the floppak executable',
+)
