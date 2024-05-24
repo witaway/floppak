@@ -88,8 +88,6 @@ sources = [
         'src/runner/parse-mountinfo.c',
 ]
 
-flatpak = subproject('flatpak')
-
 floppak = executable(
         'floppak',
         sources,
@@ -97,7 +95,8 @@ floppak = executable(
         install_dir: install_dir,
         install_rpath: get_option('install_rpath'),
         dependencies: [
-                dependency('glib-2.0', version : '>=2.46')
+                dependency('glib-2.0', version : '>=2.46'),
+                subproject('flatpak').get_variable('flatpak_dep')
         ]
 )
 
